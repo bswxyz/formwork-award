@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>THE AWARD — Guide · How this was built</title>
-<meta name="description" content="How THE AWARD was designed and built by Fable: a GSAP ScrollTrigger pinned horizontal act-sequence, clip reveals, velocity skew, and static hosting." />
+<meta name="description" content="How THE AWARD was designed and built by Formwork: a GSAP ScrollTrigger pinned horizontal act-sequence, clip reveals, velocity skew, and static hosting." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
@@ -46,7 +46,7 @@
 
   <span class="tag">Build guide · Site 15 of 25</span>
   <h1>A manifesto, staged as a <em>title sequence.</em></h1>
-  <p class="lede">THE AWARD is one of 25 sites designed and built by Fable to show what web
+  <p class="lede">THE AWARD is one of 25 sites designed and built by Formwork to show what web
     craft looks like when it takes itself seriously. Here is exactly how this one was made.</p>
 
   <h2>The idea</h2>
@@ -105,8 +105,8 @@ gsap.fromTo(statement, { clipPath: 'inset(0 0 100% 0)' },
   <h2>Ship it on GitHub Pages</h2>
   <p>Every site here is static, so hosting is three commands:</p>
   <pre><code>git init -b main &amp;&amp; git add -A &amp;&amp; git commit -m "ship"
-gh repo create fable-award --public --source=. --push
-gh api --method POST /repos/OWNER/fable-award/pages \
+gh repo create formwork-award --public --source=. --push
+gh api --method POST /repos/OWNER/formwork-award/pages \
   -f 'source[branch]=main' -f 'source[path]=/'</code></pre>
   <p>Use <strong>relative paths</strong> (<code>./main.js</code>, not <code>/main.js</code>) because project
     Pages live under <code>/repo-name/</code>. Add an empty <code>.nojekyll</code> file so every asset serves verbatim.</p>
@@ -115,7 +115,7 @@ gh api --method POST /repos/OWNER/fable-award/pages \
   <p>That's the recipe: one pinned tween, five acts, a velocity-skewed marquee, and static hosting.
     The other 24 sites each swap the central technique, but the discipline is the same.</p>
 
-  <footer>Designed &amp; built by <strong>Fable</strong> · Part of a 25-site showcase · <a href="../">Return to THE AWARD →</a></footer>
+  <footer>Designed &amp; built by <strong>Formwork</strong> · Part of a 25-site showcase · <a href="../">Return to THE AWARD →</a></footer>
 </div>
 </body>
 </html>
